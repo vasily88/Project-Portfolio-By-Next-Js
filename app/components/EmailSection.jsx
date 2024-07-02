@@ -53,7 +53,7 @@ const EmailSection = () => {
         >
             <div className="z-10">
                 <h5 className='text-xl font-bold text-white my-2'>
-                    Let's Connect
+                    Let`s Connect
                 </h5>
                 <p className='text-[#ADB7BE] mb-4 max-w-md'>
                     {" "}
@@ -78,7 +78,8 @@ const EmailSection = () => {
                             Email sent successfully!
                         </p>
                     ) : (
-                        <form className='flex flex-col' onSubmit={handleSubmit}>
+                        <form className='flex flex-col'>
+                        {/* <form className='flex flex-col' onSubmit={handleSubmit}> */}
                             <div className='mb-6'>
                                 <label htmlFor='email' className='text-white block mb-2 text-sm font-medium'>
                                     Your Email
